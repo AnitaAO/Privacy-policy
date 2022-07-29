@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    width: 1512px;
+    height: 1317px;
+    background: #F9F6EE;
+
+}
+
+header{
+    width: 1512px;
+    display: flex;
+    height: 96px; 
+    background-color: #E9EFF8;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 0 80px;
+/* box-shadow: 0px -10px 20px 5px rgb(51, 51, 51); */
+}
+
+.logo{
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    padding: 0 36px;
+    font-size: 24px;
+}
+
+nav ul li a:hover{
+    color: white;
+    opacity: 100; 
+    transition: all 0.3s ease;
+    height: 50vh;
+    z-index: -1;
+    background: #195FEA; 
+    padding: 8px 16px;
+} 
+
+.user{
+    width: 20%;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.user p{
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.user p:hover{
+    cursor: pointer;
+    color: #195FEA;
+    transition: all 0.5s ease;
+    /* z-index: -1; */
+}
+
+#avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* main .success fa{
+    height: 200px;
+    width: 200px;
+    background-color: white; 
+} */

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    width: 1512px;
+    height: 2248px;
+    background: #F9F6EE;
+
+}
+
+header{
+    width: 1512px;
+    display: flex;
+    height: 96px; 
+    background-color: #E9EFF8;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 0 80px;
+/* box-shadow: 0px -10px 20px 5px rgb(51, 51, 51); */
+}
+
+.logo{
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    padding: 0 36px;
+    font-size: 24px;
+}
+
+nav ul li a:hover{
+    color: white;
+    opacity: 100; 
+    transition: all 0.3s ease;
+    height: 50vh;
+    z-index: -1;
+    background: #195FEA; 
+    padding: 8px 16px;
+} 
+
+.user{
+    width: 20%;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.user p{
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.user p:hover{
+    cursor: pointer;
+    color: #195FEA;
+    transition: all 0.5s ease;
+    /* z-index: -1; */
+}
+
+#avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.progress-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px ;
+}
+
+.progress-bar ul .first , .second .third .fourth {
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.progress-bar ul p{
+    font-size: 16px;
+    position: relative;
+
+}
+
+.progress-bar ul li{
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+}
+
+.progress-bar ul li a{
+    font-size: 24px;
+    color: white;
+    background-color: #00337B;
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 4px 16px;
+    text-decoration: none ;
+    position: relative;
+} 
+
+.horizontal {
+    width: 160px;
+}
+
+.the-document{
+    justify-content: center; 
+    align-items:center; 
+    position:relative; 
+    padding-left: 38%;
+    margin-top: 96px;
+}
+
+.doc{
+    margin-top: 97px;
+}
+
+.select-option{
+    width: 650px;
+    margin-top: 89px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: -14%;
+}
+
+.select-option select{
+    text-align: center; 
+    position:relative; 
+    margin-left: 28%; 
+    margin-top: 64px; 
+    background: none; 
+    border-radius: 8px; 
+    padding: 10px 32px; 
+    font-size: 24px;
+    width: 280px; 
+}
+
+.the-document button{
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: 1px solid
+}
+
+.span-btn{
+    position: relative;
+    padding-left: 5%;
+}
+
