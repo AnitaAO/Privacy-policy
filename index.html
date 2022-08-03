@@ -27,60 +27,68 @@
         />
 
         <!--sidebar progress-list is here-->
-        <ul>
-          <li>
-            <a href="/index.html" id="first-el">
-              <button  type="button" id="businessinfo-btn">1</button>
+        <ul class="navbar-menu">
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/" id="first-el">
+              <button style="cursor: pointer"  type="button" id="businessinfo-btn">1</button>
               <p style="color: white;">Business Information</p>
             </a>
           </li>
           <hr class="vert" />
-          <li>
-            <a href="/additionalinfo.html" id="second-el">
-              <button type="button" id="additionalinfo-btn" onclick="openBusiness()"><bold>2</bold></button>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/additionalinfo.html" id="second-el">
+              <button style="cursor: pointer;" type="button" id="additionalinfo-btn" onclick="openBusiness()"><bold>2</bold></button>
               <p style="color: white;">Additional Information</p>
             </a>
           </li>
           <hr class="vert" />
-          <li>
-            <a href="/security.html" id="third-el">
-              <button type="button" id="security-btn"><bold>3</bold></button>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/security.html" id="third-el">
+              <button style="cursor: pointer;" type="button" id="security-btn"><bold>3</bold></button>
               <p style="color: white;">Security Details</p>
             </a>
           </li>
           <hr class="vert" />
-          <li>
-            <a href="previewdoc.html" id="fourth-el">
-              <button type="button" id="preview-btn"><bold>4</bold></button>
+          <li class="sidebar-item">
+            <a class="sidebar-link" href="/previewdoc.html" id="fourth-el">
+              <button style="cursor: pointer;" type="button" id="preview-btn"><bold>4</bold></button>
               <p style="color: white;">Preview Document</p>
             </a>
           </li>
         </ul>
       </div>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li>
-              <a href="/">
+
+      <!-- navbar is here -->
+      <nav class="navbar">
+        <div class="navbar-container">
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a class="navbar-links" href="/">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-links" href="/">
                 <select style="font-size: 24px; border: none; background: none;" id="country" name="country">
                   <option selected disabled>Generate</option>
                   <option value="AF">Afghanistan</option>
                   <option value="AX">Aland Islands</option>
                 </select>
               </a>
+            </li >
+            <li class="navbar-item">
+              <a class="navbar-links" href="/">About Us</a>
             </li>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/">Contact Us</a></li>
+            <li class="navbar-item">
+              <a class="navbar-links" href="/">Contact Us</a>
+            </li>
           </ul>
-        </nav>
 
-        <!--user profile is here-->
-        <div class="user">
-          <img id="avatar" src="/assets/images/avatar.jpg" alt="user-image" />
-          <p><bold>Dashboard</p></p>
+          <!-- user profile is here -->
+          <div class="user">
+            <img id="avatar" src="/assets/images/avatar.jpg" alt="user-image" />
+            <p style="padding-left: 8px;"><bold>Dashboard</p></p>
+          </div>
         </div>
-      </header> 
+      </navbar> 
     </div>
 
     <section class="page">

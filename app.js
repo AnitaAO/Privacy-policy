@@ -8,14 +8,14 @@ const thirdEl = document.getElementById('thirdEl')
 const previewBtn = document.getElementById("preview-btn");
 const fourthEl = document.getElementById('fourthEl')
 
-businessinfoBtn.addEventListener('click', () => { 
-    myPage.value = ""
-    renderPage()
-}) 
+// businessinfoBtn.addEventListener('click', () => { 
+//     myPage.value = ""
+//     renderPage()
+// }) 
 
-function renderPage() {
-    let pageItems = ""
-}
+// function renderPage() {
+//     let pageItems = ""
+// }
     
 
 

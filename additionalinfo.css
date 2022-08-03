@@ -165,7 +165,7 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-.page .content-area{
+.additionalinfo .content-area{
     position: relative;
     width: 100%;
     padding-left: 193px;
@@ -174,7 +174,7 @@ nav ul li a:hover{
     justify-content: space-between;
 }
 
-.page .content-area .title{
+.addiitionalinfo .content-area .title{
     display: flex;
     justify-content: space-between;
     padding-top: 16px;
@@ -182,7 +182,7 @@ nav ul li a:hover{
     /* border-bottom: 1px solid; */
 }
 
-.page .content-area .title button{
+.addiitionalinfo .content-area .title button{
     padding: 16px 32px;
     border-radius: 8px;
     border: 1px solid #195FEA;
@@ -193,7 +193,7 @@ nav ul li a:hover{
     /* margin-left: 20%; */
 }
 
-.page .content-area .title button:hover{
+.addiitionalinfo .content-area .title button:hover{
     background: #195FEA;
     transition: all 0.5s ease;
     color: white;
@@ -221,13 +221,13 @@ nav ul li a:hover{
     font-size: 24px;
 }
 
-.page-btn{
+.additionalinfo-btn{
     margin-top: 132px;
     position: relative;
     justify-content: space-between;
 }
 
-.page-btn span button{
+.additionalinfo-btn span button{
     
     margin-right: 78%;
     background-color: white;
@@ -236,7 +236,7 @@ nav ul li a:hover{
     padding: 18px 32px;
 }
 
-.page-btn button{
+.additionalinfo-btn button{
     background-color: #0055CC;
     color: white;
     border-radius: 8px;
@@ -244,7 +244,7 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-.page-btn span button:hover{
+.additionalinfo-btn span button:hover{
     
     margin-right: 78%;
     background-color: white;
@@ -254,7 +254,7 @@ nav ul li a:hover{
     transition: all 02 ease;
 }
 
-.page-btn button:hover{
+.additionalinfo-btn button:hover{
     background-color: blue;
     color: white;
     border-radius: 8px;

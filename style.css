@@ -14,6 +14,7 @@ body{
 
 .sticky-el{
     display: flex;
+    /* position: sticky; */
 }
 
 .side-bar{
@@ -24,10 +25,12 @@ body{
     justify-content: center;
     text-align: center;
     align-content: center;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     position: sticky;
+    position: relative;
     color: white;
-    grid-area: side-bar;
+    z-index: 999;
+    /* grid-area: side-bar; */
 
 }
 
@@ -96,63 +99,69 @@ ul :nth-of-type(4) button{
     margin: 24px 40%;  
 }
 
-header{
+.navbar{
     width: 1340px;
-    display: flex;
+    top: 0;
+    z-index: 999;
+    font-size: 24px;
     height: 96px; 
     background-color: #E9EFF8;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: sticky;
-/* box-shadow: 0px -10px 20px 5px rgb(51, 51, 51); */
-}
-
-nav{
-    padding-left: 157px;
-    padding-top: 36px;
-    padding-bottom: 36px;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
     position: relative;
+
 }
 
-nav ul li a{
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 157px;
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
     text-decoration: none;
     color: #333;
-    padding: 0 36px;
     font-size: 24px;
 }
 
-nav ul li a:hover{
+.navbar-links select:hover{
     color: white;
-    opacity: 100; 
+}
+
+.navbar-links option{
+    color: #333;
+}
+
+.navbar-links:hover{
+    color: white;
+    /* opacity: 100;  */
     transition: all 0.3s ease;
-    height: 50vh;
-    z-index: -1;
-    background: #195FEA; 
+    /* z-index: -1; */
+    background: #00337B; 
     padding: 8px 16px;
 }
 
 .user{
-    width: 20%;
     display: flex;
     align-items: center; 
-    
-}
-
-.user p{
-    padding-left: 8px;
-    font-size: 16px;
-}
-
-.user p:hover{
-    cursor: pointer;
-    color: #195FEA;
-    transition: all 0.5s ease;
-    /* z-index: -1; */
+    font-size: 16px;   
 }
 
 #avatar{
@@ -160,6 +169,17 @@ nav ul li a:hover{
     height: 45px;
     border-radius: 100%;
     cursor: pointer;
+}
+
+.user p:hover{
+    cursor: pointer;
+    color: #195FEA;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 960) {
+
+    
 }
 
 .page .content-area{
@@ -176,7 +196,6 @@ nav ul li a:hover{
     justify-content: space-between;
     padding-top: 16px;
     margin-bottom: 16px;
-    /* border-bottom: 1px solid; */
 }
 
 .page .content-area .title button{
@@ -187,7 +206,6 @@ nav ul li a:hover{
     background-color: white;
     cursor: pointer;
     position: relative;
-    /* margin-left: 0%; */
 }
 
 .page .content-area .title button:hover{
@@ -268,4 +286,291 @@ nav ul li a:hover{
 
 .row2 p{
     margin-bottom: 24px;
+}
+
+
+/* additional information page css is here*/
+.addiitionalinfo .content-area{
+    position: relative;
+    width: 100%;
+    padding-left: 193px;
+    padding-top: 32px;
+    margin-top: -1416px;
+    justify-content: space-between;
+}
+
+.addiitionalinfo .content-area .title{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    /* border-bottom: 1px solid; */
+}
+
+.addiitionalinfo .content-area .title button{
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: 1px solid #195FEA;
+    color: #195FEA;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    /* margin-left: 20%; */
+}
+
+.addiitionalinfo .content-area .title button:hover{
+    background: #195FEA;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.content{
+    padding-top: 41px;
+}
+
+.content h3{
+    padding-bottom: 34px;
+}
+
+.column{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.Q2, .Q3, .Q4{
+    margin-top: 44px;
+} 
+
+.Q1 > p, .Q2 > p, .Q3 > p, .Q4 > p{
+    font-size: 24px;
+}
+
+.additionalinfo-btn{
+    margin-top: 132px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.additionalinfo-btn span button{
+    
+    margin-right: 78%;
+    background-color: white;
+    border: 1px solid #0055CC;
+    border-radius: 8px;
+    padding: 18px 32px;
+}
+
+.additionalinfo-btn button{
+    background-color: #0055CC;
+    color: white;
+    border-radius: 8px;
+    padding: 18px 32px;
+    cursor: pointer;
+}
+
+.additionalinfo-btn span button:hover{
+    
+    margin-right: 78%;
+    background-color: white;
+    border: 1px solid #0055CC;
+    border-radius: 8px;
+    padding: 18px 32px;
+    transition: all 02 ease;
+}
+
+.additionalinfo-btn button:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    padding: 18px 32px;
+    cursor: pointer;
+    transition: all 0.2 ease;
+}
+
+/*Security page css is here */
+.security .content-area{
+    position: relative;
+    width: 100%;
+    padding-left: 193px;
+    padding-top: 32px;
+    margin-top: -1416px;
+    justify-content: space-between;
+}
+
+.security .content-area .title{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    /* border-bottom: 1px solid; */
+}
+
+.security .content-area .title button{
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: 1px solid #195FEA;
+    color: #195FEA;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    /* margin-left: 20%; */
+}
+
+.security .content-area .title button:hover{
+    background: #195FEA;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.content{
+    padding-top: 41px;
+}
+
+.content h3{
+    padding-bottom: 34px;
+}
+
+.column{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.Q2, .Q3, .Q4{
+    margin-top: 44px;
+} 
+
+.Q1 > p, .Q2 > p, .Q3 > p, .Q4 > p{
+    font-size: 24px;
+}
+
+.security-btn{
+    margin-top: 132px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.security-btn span button{
+    
+    margin-right: 78%;
+    background-color: white;
+    border: 1px solid #0055CC;
+    border-radius: 8px;
+    padding: 18px 32px;
+}
+
+.security-btn button{
+    background-color: #0055CC;
+    color: white;
+    border-radius: 8px;
+    padding: 18px 32px;
+    cursor: pointer;
+}
+
+.security-btn span button:hover{
+    
+    margin-right: 78%;
+    background-color: white;
+    border: 1px solid #0055CC;
+    border-radius: 8px;
+    padding: 18px 32px;
+    transition: all 02 ease;
+}
+
+.security-btn button:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    padding: 18px 32px;
+    cursor: pointer;
+    transition: all 0.2 ease;
+}
+
+/* Preview document css is here */
+.progress-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px ;
+}
+
+.progress-bar ul .first , .second .third .fourth {
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.progress-bar ul p{
+    font-size: 16px;
+    position: relative;
+
+}
+
+.progress-bar ul li{
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+}
+
+.progress-bar ul li a{
+    font-size: 24px;
+    color: white;
+    background-color: #00337B;
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 4px 16px;
+    text-decoration: none ;
+    position: relative;
+} 
+
+.horizontal {
+    width: 160px;
+}
+
+.the-document{
+    justify-content: center; 
+    align-items:center; 
+    position:relative; 
+    padding-left: 38%;
+    margin-top: 96px;
+}
+
+.doc{
+    margin-top: 97px;
+}
+
+.select-option{
+    width: 650px;
+    margin-top: 89px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: -14%;
+}
+
+.select-option select{
+    text-align: center; 
+    position:relative; 
+    margin-left: 28%; 
+    margin-top: 64px; 
+    background: none; 
+    border-radius: 8px; 
+    padding: 10px 32px; 
+    font-size: 24px;
+    width: 280px; 
+}
+
+.the-document button{
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: 1px solid
+}
+
+.span-btn{
+    position: relative;
+    padding-left: 5%;
 }
